@@ -1,7 +1,9 @@
 .navbar { 
     background-color: rgb(149, 216, 210);
     text-align: left;
-    padding-left: 5px;
+    padding-left: 1%;
+    padding-right: 5%;
+    text-align: center;
 
 }
 .nav-item{
@@ -35,27 +37,30 @@
     background-color: coral;
 }
 .legenda{
+    font-family: sans-serif;
     font-size: 25px;
     font-weight: 300px;
     padding-bottom: 30px;
-    padding-top: 20px;
-    padding-left: 30%;
-    padding-right: 25%;
+    padding-top: 50px;
+    padding-left: 20%;
+    padding-right: 21%;
     text-align: justify;
     color: black;
 }
 .descricao {
-    padding-bottom: 30px;
-    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     padding-left: 20%;
     padding-right: 20%;
+    font-size: 25px;
+    font-family: sans-serif;
     text-align: justify center;
+    color: black;
 }
 
 .descricaoSecudaria {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 10%;
-    font-size: 30px;
     text-align: left;
 }
 .tituloSecundario{
@@ -64,17 +69,21 @@
     padding-left: 20%;
     padding-right: 20%;
     text-align: center;
+    color: black;
+
     
 }
 .pdfDoc{
   padding-top: 35px;
-  box-shadow:2px 3px 3px 3px rgb(104, 47, 26);
+  box-shadow:2px 3px 3px 3px rgb(235, 222, 217);
+  border: 1px solid black;
 }
 .imagens{
     padding-bottom: 10%;
     padding: auto;
     align-items: center;
-    box-shadow:2px 1px 2px 2px rgb(104, 47, 26);
+    box-shadow:2px 1px 2px 2px rgb(235, 222, 217);
+    border: 1px solid black;
 }
 .bg-footer{
     background-color: coral;
