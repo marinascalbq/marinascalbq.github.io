@@ -1,91 +1,229 @@
-.navbar { 
+body {
+    align-items: center;
+    margin: 0;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.navbar, .principal{
     background-color: rgb(149, 216, 210);
-    text-align: left;
-    padding-left: 1%;
-    padding-right: 5%;
     text-align: center;
+    padding-bottom: 0%;
+    padding-top: 10px;
+    padding-left: 2%;
+}
+
+nav {
+    padding: 0 20px;
+    justify-content: space-between;
+    background-color: rgb(149, 216, 210);
+    align-items: center;
 
 }
-.nav-item{
+
+h1,
+p {
+    margin: 0;
+    padding: 10px;
+}
+
+nav,
+ul {
+    padding: 0%;
+    display: grid;
+    flex-direction: row;
+    position:absolute;
+    justify-content: space-between;
+}
+
+li {
+    margin: 0;
     text-align: center;
-    font-family: sans-serif;
-    padding-left: 40px;
-    font-weight: 600;
-    color: black;
-    
+    display: inline-block;
+    align-content: center;
+  
+}
+
+li:hover,
+h1:hover {
+    cursor: pointer;
+    opacity: 1;
+    background-color: rgb(255, 255, 255);
+}
+
+Menu, .Titulo {
+    background-color: rgb(149, 216, 210);
+    max-width: 100%;
+}
+
+menuPrincipal{
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.nav-item {
+    flex: content;
+    flex-direction: row;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
 
 }
-.Titulo{
-    
+
+.nav-link{
+    font-size: 20px;
+}
+
+
+.Titulo {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     padding-left: 10px;
     color: rgb(0, 0, 0);
     font-weight: bolder;
+    background-color: rgb(149, 216, 210);
+    align-items: center;
 }
 
-.margin{
+.margin {
     padding-top: 5px;
     padding-bottom: 80px;
-    
 }
-.marginSeccao{
+
+.marginSeccao {
     color: rgb(0, 0, 0);
-    font-weight: 700;
+    font-weight: 500;
     padding-top: 15px;
     padding-bottom: 10px;
     background-color: coral;
 }
-.legenda{
+
+.legenda {
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300px;
     padding-bottom: 30px;
     padding-top: 50px;
-    padding-left: 20%;
-    padding-right: 21%;
-    text-align: justify;
-    color: black;
-}
-.descricao {
-    padding-bottom: 50px;
-    padding-top: 50px;
-    padding-left: 20%;
-    padding-right: 20%;
-    font-size: 25px;
-    font-family: sans-serif;
-    text-align: justify center;
-    color: black;
-}
-
-.descricaoSecudaria {
-    padding-top: 10px;
     padding-left: 10%;
-    text-align: left;
-}
-.tituloSecundario{
-    padding-bottom: 30px;
-    padding-top: 20px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-right: 11%;
     text-align: center;
     color: black;
+}
 
-    
+.descricao {
+    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 26px;
+    font-family: sans-serif;
+    text-align: justify center;
+    font-weight: bold;
+    color: black;
 }
-.pdfDoc{
-  padding-top: 35px;
-  box-shadow:2px 3px 3px 3px rgb(235, 222, 217);
-  border: 1px solid black;
+.imagens1{
+    padding-top: 2px;
+    padding-bottom: 5px;
 }
-.imagens{
+.descricaoSecudaria {
+   
+    padding-top: 5px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 500;
+    color:black;
+}
+
+.descricaoPgInicial {
+   
+    padding-top: 7px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    color:black;
+}
+
+.tituloSecundario {
+    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: justify;
+    color: coral;
+}
+
+.pdfDoc {
+    padding-top: 35px;
+    box-shadow: 2px 3px 3px 3px rgb(235, 222, 217);
+    border: 1px solid black;
+}
+
+.imagens {
     padding-bottom: 10%;
     padding: auto;
     align-items: center;
-    box-shadow:2px 1px 2px 2px rgb(235, 222, 217);
+    box-shadow: 2px 1px 2px 2px rgb(235, 222, 217);
     border: 1px solid black;
 }
-.bg-footer{
+
+imgPrincipal{
+    padding-bottom: 10%;
+    align-content: space-between;
+    box-shadow: 1px 1px 1px 1px;
+    border: 2px solid coral;
+}
+
+.bg-footer {
     background-color: coral;
     color: black;
+}
+
+
+a{
+    color: #ff8052;
+    font-size: 36px;
+}
+ 
+a:hover {
+    color: rgb(226, 70, 96);
+    text-decoration: none;
+  }
+  
+a:active {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+  }
+
+
+@media (max-width: 700px) {
+    nav, ul{
+        flex: content;
+        flex-direction: column;
+    }
+
+    ul{
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav{
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    h1{
+        margin: 10px;
+    }
+
+    li, ul{
+        width: 100%;
+    }
+    
 }
